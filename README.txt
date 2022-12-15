@@ -40,7 +40,7 @@ sudo apt-get install mysql-server -y
 17. sudo mysql_secure_installation (reply: y)
 18. sudo mysql -u root -p 
 19. CREATE DATABASE attendancesystem;
-20. CREATE USER 'attendanceadmin'@'localhost' IDENTIFIED BY 'aethust';
+20. CREATE USER 'attendanceadmin'@'localhost' IDENTIFIED BY 'raspberry';
 21. GRANT ALL PRIVILEGES ON attendancesystem.* TO 'attendanceadmin'@'localhost';
 22. use attendancesystem;
 
@@ -173,5 +173,5 @@ sudo mysql -u root -p
 37. sudo mkdir /var/www/html/attendance
 38. sudo git clone https://github.com/pimylifeup/attendance-system-frontend.git /var/www/html/attendance
 39. sudo nano /var/www/html/attendance/common.php
-40. 'password'      => 'aethust'
+40. 'password'      => 'raspberry'
 41. http://Pi's_ip/attendance
