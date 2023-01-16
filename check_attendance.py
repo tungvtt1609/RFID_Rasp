@@ -15,13 +15,12 @@ db = mysql.connector.connect(      #tạo database
 cursor = db.cursor()   #khởi tạo database
 reader = SimpleMFRC522()    #khởi tạo RFID
 
-servo = 11
 lock = 0
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(11, GPIO.OUT)
-servo1 = GPIO.PWM(11, 50)
+GPIO.setup(33, GPIO.OUT)
+servo1 = GPIO.PWM(33, 50)
 
 servo1.start(0)
 
